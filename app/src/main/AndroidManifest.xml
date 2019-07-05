@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rimuzakki.myrbx">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".DetailKas" />
+        <activity android:name=".UpdateKas" />
+        <activity android:name=".ListKas" />
+        <activity android:name=".UpdateInventory" />
+        <activity android:name=".DetailInventory" />
+        <activity android:name=".ListInventory" />
+        <activity android:name=".UpdateSchedule" />
+        <activity android:name=".DetailSchedule" />
+        <activity android:name=".ListSchedule" />
+        <activity android:name=".UpdateMember" />
+        <activity android:name=".DetailMember" />
+        <activity android:name=".ListMember" />
+        <activity android:name=".KasActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".MemberActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16sp"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:paddingBottom="16sp"
+    tools:context=".ScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_y"
+        android:gravity="center"
+        android:text="Jadwal Latihan / Event / Turnamen"
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nama Event"/>
+
+    <EditText
+        android:id="@+id/etNamaEvent"
+        android:inputType="text"
+        android:hint="Nama event yang akan datang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Event"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupJenisEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioLatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latihan" />
+
+            <RadioButton
+                android:id="@+id/radioEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event" />
+
+            <RadioButton
+                android:id="@+id/radioTurnamen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turnamen" />
+
+        </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal"/>
+
+    <EditText
+        android:id="@+id/etTanggalEvent"
+        android:inputType="date"
+        android:hint="DD/MM/YYYY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jam"/>
+
+    <EditText
+        android:id="@+id/etJamEvent"
+        android:inputType="time"
+        android:hint="hh:mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tempat"/>
+
+    <EditText
+        android:id="@+id/etTempatEvent"
+        android:inputType="text"
+        android:hint="Tempat event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBackSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali" />
+
+            <Button
+                android:id="@+id/btnSimpanSchedule"
+                style="@style/ButtonCTA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

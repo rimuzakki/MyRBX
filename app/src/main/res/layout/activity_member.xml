@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_x"
+    android:paddingTop="@dimen/margin_x"
+    android:paddingRight="@dimen/margin_y"
+    android:paddingLeft="@dimen/margin_y"
+    tools:context=".MemberActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_y"
+            android:gravity="center"
+            android:text="Pendaftaran Member RBX"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:text="Id Member"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/etIdMember"-->
+            <!--android:inputType="number"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nama Lengkap"/>
+
+        <EditText
+            android:id="@+id/etNamaLengkap"
+            android:inputType="text"
+            android:hint="Nama lengkap member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Alamat"/>
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:inputType="text"
+            android:hint="Alamat member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="No. Telepon"/>
+
+        <EditText
+            android:id="@+id/etNoTelp"
+            android:inputType="phone"
+            android:hint="Nomor telpon aktif member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tempat Lahir"/>
+
+        <EditText
+            android:id="@+id/etTempatLahir"
+            android:inputType="text"
+            android:hint="Kota kelahiran member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tanggal Lahir"/>
+
+        <EditText
+            android:id="@+id/etTanggalLahir"
+            android:inputType="date"
+            android:hint="DD/MM/YYYY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBackMember"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kembali" />
+
+            <Button
+                android:id="@+id/btnSimpanMember"
+                style="@style/ButtonCTA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Simpan" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

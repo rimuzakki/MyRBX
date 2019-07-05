@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingTop="@dimen/margin_y"
+    android:paddingBottom="@dimen/margin_y"
+    android:paddingLeft="@dimen/margin_x"
+    android:paddingRight="@dimen/margin_x"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RBX Assistant"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btn_move_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Member RBX"
+        android:layout_marginBottom="@dimen/margin_x"/>
+
+    <Button
+        android:id="@+id/btn_move_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:layout_marginBottom="@dimen/margin_x"/>
+
+    <Button
+        android:id="@+id/btn_move_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inventaris"
+        android:layout_marginBottom="@dimen/margin_x"/>
+
+    <Button
+        android:id="@+id/btn_move_kas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kas"
+        android:layout_marginBottom="@dimen/margin_x"/>
+
+</LinearLayout>
